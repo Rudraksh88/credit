@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-// #include <cs50.h>
+#include <cs50.h>
 
 int main(void)
 {
-    long long number; // Variable for CC/DC number
+    long number; // Variable for CC/DC number
 
     do // Loop to get a valid input
     {
-        printf("Number: ");
-        scanf("%lld", &number);
+        number = get_long("Number: ");
     }
     while (number <= 0);
 
